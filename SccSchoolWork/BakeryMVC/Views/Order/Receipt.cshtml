@@ -1,0 +1,44 @@
+﻿
+@model IEnumerable<Bakery.Models.Receipt>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Receipt</h2>
+
+
+
+<table class="table">
+
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.ProductName)</th>
+        <th>@Html.DisplayNameFor(model => model.Unitprice)</th>
+        <th>@Html.DisplayNameFor(model => model.Quantity)</th>
+        <th>@Html.DisplayNameFor(model => model.Discount)</th>
+        <th>@Html.DisplayNameFor(model => model.SaleTax)</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(model => item.ProductName)</td>
+            <td>@Html.DisplayFor(model => item.Unitprice)</td>
+            <td>@Html.DisplayFor(model => item.Quantity)</td>
+            <td>@Html.DisplayFor(model => item.Discount)</td>
+            <td>@Html.DisplayFor(model => item.SaleTax)</td>
+        </tr>
+    }
+</table>
+<table>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Total)</th>
+    </tr>
+    @foreach (var item in Model)
+
+    {
+        <tr>
+    <td>@Html.DisplayFor(model => item.Total)</td>
+            </tr>
+    }
+    </table>
+
+<p>Thank You for Shopping in Long's Bakery. And This is Your Receipt.</p>

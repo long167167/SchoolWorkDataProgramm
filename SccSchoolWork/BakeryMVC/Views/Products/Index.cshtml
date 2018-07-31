@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Bakery.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product Update</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </th>
+        <th></th>
+    </tr>
+ 
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductPrice)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductKey }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductKey }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductKey })
+        </td>
+    </tr>
+}
+   
+
+
+</table>
