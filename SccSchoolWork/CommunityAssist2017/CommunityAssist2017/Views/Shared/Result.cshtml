@@ -1,0 +1,10 @@
+﻿@model CommunityAssist2017.Models.Message
+@{
+    ViewBag.Title = "Result";
+}
+
+<h2>Result</h2>
+<!--this view uses the Message class we created and just returns
+    whatever message we send it-->
+
+<p>@Html.DisplayTextFor(model => model.MessageText)</p>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CommunityAssist2017ModelStoreContainer" CdmEntityContainer="CommunityAssist2017Entities">
+    <EntitySetMapping Name="BusinessRules">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.BusinessRule">
+        <MappingFragment StoreEntitySet="BusinessRule">
+          <ScalarProperty Name="BusinessRuleKey" ColumnName="BusinessRuleKey" />
+          <ScalarProperty Name="BusinessRuleText" ColumnName="BusinessRuleText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Donations">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.Donation">
+        <MappingFragment StoreEntitySet="Donation">
+          <ScalarProperty Name="DonationKey" ColumnName="DonationKey" />
+          <ScalarProperty Name="PersonKey" ColumnName="PersonKey" />
+          <ScalarProperty Name="DonationDate" ColumnName="DonationDate" />
+          <ScalarProperty Name="DonationAmount" ColumnName="DonationAmount" />
+          <ScalarProperty Name="DonationConfirmationCode" ColumnName="DonationConfirmationCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeKey" ColumnName="EmployeeKey" />
+          <ScalarProperty Name="PersonKey" ColumnName="PersonKey" />
+          <ScalarProperty Name="EmployeeDateHired" ColumnName="EmployeeDateHired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeePositions">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.EmployeePosition">
+        <MappingFragment StoreEntitySet="EmployeePosition">
+          <ScalarProperty Name="PositionKey" ColumnName="PositionKey" />
+          <ScalarProperty Name="EmployeeKey" ColumnName="EmployeeKey" />
+          <ScalarProperty Name="EmployeePositionDateAdded" ColumnName="EmployeePositionDateAdded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrantApplications">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.GrantApplication">
+        <MappingFragment StoreEntitySet="GrantApplication">
+          <ScalarProperty Name="GrantApplicationKey" ColumnName="GrantApplicationKey" />
+          <ScalarProperty Name="PersonKey" ColumnName="PersonKey" />
+          <ScalarProperty Name="GrantAppicationDate" ColumnName="GrantAppicationDate" />
+          <ScalarProperty Name="GrantTypeKey" ColumnName="GrantTypeKey" />
+          <ScalarProperty Name="GrantApplicationRequestAmount" ColumnName="GrantApplicationRequestAmount" />
+          <ScalarProperty Name="GrantApplicationReason" ColumnName="GrantApplicationReason" />
+          <ScalarProperty Name="GrantApplicationStatusKey" ColumnName="GrantApplicationStatusKey" />
+          <ScalarProperty Name="GrantApplicationAllocationAmount" ColumnName="GrantApplicationAllocationAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrantApplicationReviews">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.GrantApplicationReview">
+        <MappingFragment StoreEntitySet="GrantApplicationReview">
+          <ScalarProperty Name="GrantApplicationReviewKey" ColumnName="GrantApplicationReviewKey" />
+          <ScalarProperty Name="GrantApplicationKey" ColumnName="GrantApplicationKey" />
+          <ScalarProperty Name="EmployeeKey" ColumnName="EmployeeKey" />
+          <ScalarProperty Name="GrantApplicationReviewDate" ColumnName="GrantApplicationReviewDate" />
+          <ScalarProperty Name="GrantApplicationReviewNotes" ColumnName="GrantApplicationReviewNotes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrantApplicationStatus">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.GrantApplicationStatu">
+        <MappingFragment StoreEntitySet="GrantApplicationStatus">
+          <ScalarProperty Name="GrantApplicationStatusKey" ColumnName="GrantApplicationStatusKey" />
+          <ScalarProperty Name="GrantApplicationStatusTerm" ColumnName="GrantApplicationStatusTerm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrantTypes">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.GrantType">
+        <MappingFragment StoreEntitySet="GrantType">
+          <ScalarProperty Name="GrantTypeKey" ColumnName="GrantTypeKey" />
+          <ScalarProperty Name="GrantTypeName" ColumnName="GrantTypeName" />
+          <ScalarProperty Name="GrantTypeDescription" ColumnName="GrantTypeDescription" />
+          <ScalarProperty Name="GrantTypemaximum" ColumnName="GrantTypemaximum" />
+          <ScalarProperty Name="GrantTypeLifetimeMaximum" ColumnName="GrantTypeLifetimeMaximum" />
+          <ScalarProperty Name="GrantTypeDateEntered" ColumnName="GrantTypeDateEntered" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginHistories">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.LoginHistory">
+        <MappingFragment StoreEntitySet="LoginHistory">
+          <ScalarProperty Name="loginHistoryKey" ColumnName="loginHistoryKey" />
+          <ScalarProperty Name="PersonKey" ColumnName="PersonKey" />
+          <ScalarProperty Name="LoginHistoryTimeStamp" ColumnName="LoginHistoryTimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="PersonKey" ColumnName="PersonKey" />
+          <ScalarProperty Name="PersonLastName" ColumnName="PersonLastName" />
+          <ScalarProperty Name="PersonFirstName" ColumnName="PersonFirstName" />
+          <ScalarProperty Name="PersonEmail" ColumnName="PersonEmail" />
+          <ScalarProperty Name="PersonPrimaryPhone" ColumnName="PersonPrimaryPhone" />
+          <ScalarProperty Name="PersonPassword" ColumnName="PersonPassword" />
+          <ScalarProperty Name="PersonPassSeed" ColumnName="PersonPassSeed" />
+          <ScalarProperty Name="PersonDateAdded" ColumnName="PersonDateAdded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonAddresses">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.PersonAddress">
+        <MappingFragment StoreEntitySet="PersonAddress">
+          <ScalarProperty Name="PersonAddressKey" ColumnName="PersonAddressKey" />
+          <ScalarProperty Name="PersonKey" ColumnName="PersonKey" />
+          <ScalarProperty Name="PersonAddressApt" ColumnName="PersonAddressApt" />
+          <ScalarProperty Name="PersonAddressStreet" ColumnName="PersonAddressStreet" />
+          <ScalarProperty Name="PersonAddressCity" ColumnName="PersonAddressCity" />
+          <ScalarProperty Name="PersonAddressState" ColumnName="PersonAddressState" />
+          <ScalarProperty Name="PersonAddressPostal" ColumnName="PersonAddressPostal" />
+          <ScalarProperty Name="PersonAddressDateAdded" ColumnName="PersonAddressDateAdded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Positions">
+      <EntityTypeMapping TypeName="CommunityAssist2017Model.Position">
+        <MappingFragment StoreEntitySet="Position">
+          <ScalarProperty Name="PositionKey" ColumnName="PositionKey" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+          <ScalarProperty Name="PositionDescription" ColumnName="PositionDescription" />
+          <ScalarProperty Name="PositionDateAdded" ColumnName="PositionDateAdded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_Login" FunctionName="CommunityAssist2017Model.Store.usp_Login" />
+    <FunctionImportMapping FunctionImportName="usp_Register" FunctionName="CommunityAssist2017Model.Store.usp_Register" />
+  </EntityContainerMapping>
+</Mapping>

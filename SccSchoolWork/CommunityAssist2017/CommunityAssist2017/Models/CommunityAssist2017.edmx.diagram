@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="918a8f846e984552abc927352cb1704c" Name="Diagram1">
+        <EntityTypeShape EntityType="CommunityAssist2017Model.BusinessRule" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.Donation" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.Employee" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.EmployeePosition" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.GrantApplication" Width="1.5" PointX="6" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.GrantApplicationReview" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.GrantApplicationStatu" Width="1.5" PointX="3.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.GrantType" Width="1.5" PointX="3.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.LoginHistory" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.Person" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.PersonAddress" Width="1.5" PointX="3" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CommunityAssist2017Model.Position" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__Donation__Person__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__Employee__Person__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__EmployeeP__Emplo__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__GrantAppl__Emplo__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__EmployeeP__Posit__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__GrantAppl__Grant__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__GrantAppl__Grant__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__GrantAppl__Grant__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__GrantAppl__Perso__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__LoginHist__Perso__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="CommunityAssist2017Model.FK__PersonAdd__Perso__3B75D760" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
